@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+}
+header{
+    margin: 100px 0 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+h1{
+    font-size: 58px;
+}
+.fields{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    font-size: 30px;
+}
+.field_1{
+    margin-right: 250px;
+}
+.full{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.app{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.button{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 220px;
+    height: 50px;
+    
+    background-color: rgb(29, 146, 201);
+    border: black 1px solid;;
+}
+#multi{
+    background-color: rgb(121, 161, 182);
+    cursor: default;
+}
+.app-battlefield-1{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 363px;
+    height: 363px;
+    margin: 0 33px 0 0;
+}
+.app-battlefield-2{
+    margin: 0 0 0 0px;
+    display: flex;
+	flex-wrap: wrap;
+    width: 363px;
+    height: 363px;
+}
+.rect{
+    width: 33px;
+    height: 33px;
+    background-color: rgba(154, 174, 185, 0.096);
+    border: 1px solid rgb(38, 115, 160);
+}
+.marker-row{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    line-height: 33px;
+    width: 33px;
+    height: 33px;
+}
+.marker-column{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    line-height: 33px;
+    width: 33px;
+    height: 33px;
+
+}
+.ship-random{
+    top: calc(33px * var(--startY));
+    left: calc(33px * var(--startX));
+    width: calc((var(--endX) - var(--startX)) * 33px);
+    height: calc((var(--endY) - var(--startY)) * 33px);
+    min-height: 33px;
+    min-width: 33px;
+    margin: 1px;
+    background-color: rgb(36, 178, 255);
+    border: 1px solid rgb(38, 115, 160);
+}
